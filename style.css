@@ -1,0 +1,362 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 0;
+    
+}
+a {
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1e1e1e; 
+}
+
+.navbar-brand-img{
+    color: #e4002b; 
+    font-weight: bold;
+  
+}
+
+.navbar-nav .nav-link {
+    color: #e0e0e0; 
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e4002b; 
+}
+
+/* Responsive styling for navbar */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        text-align: center; 
+    }
+}
+
+/* Cart Icon Styling */
+.nav-link i {
+    font-size: 1.5rem; 
+    color: #e0e0e0; 
+}
+
+.navbar-nav .nav-link img {
+    width: 30px; 
+    height: 30px;
+}
+
+.navbar-nav .nav-link:hover img {
+    opacity: 0.8; 
+}
+
+.nav-item:active,
+.nav-item:hover {
+    color: #e4002b; 
+    text-decoration: underline;
+}
+
+/* Browse Categories */
+h3 {
+    color: #f8f9fa; 
+}
+
+/* Category Card */
+.category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(228, 0, 43, 0.5); 
+}
+
+.category-card p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Exclusive Offers */
+.offer-card {
+    background-color: #1e1e1e; 
+    border: 1px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(228, 0, 43, 0.5); 
+}
+
+.offer-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.offer-card h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e4002b; 
+    margin-top: 10px;
+}
+
+.offer-card p {
+    font-size: 0.9rem;
+    color: #bdbdbd; 
+}
+
+/* Offer Section */
+.offer-section {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #1e1e1e; 
+}
+
+.offer-section h3 {
+    color: #f8f9fa; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offer-wrapper {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+.offer-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card img {
+    width: 100%;
+    
+    border-radius: 10px 10px 0 0;
+}
+
+.offer-card h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e4002b; 
+    margin-top: 10px;
+}
+
+.offer-card p {
+    font-size: 0.9rem;
+    color: #bdbdbd; 
+}
+
+/* Hover Effects */
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(228, 0, 43, 0.5); 
+}
+
+
+.offer-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.offer-wrapper::-webkit-scrollbar-thumb {
+    background-color: #e4002b; 
+    border-radius: 5px;
+}
+
+.offer-wrapper::-webkit-scrollbar-track {
+    background-color: #333; 
+}
+
+
+footer {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    margin-top: 40px;
+}
+
+/* Footer Links */
+footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e4002b; 
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons i {
+    font-size: 30px;
+    color: #e0e0e0; 
+    transition: color 0.3s ease, transform 0.8s ease; 
+}
+
+/* Hover Effects */
+.social-icons a:hover i {
+    color: #e4002b; 
+    animation: rotateOscillate 1s ease-in-out infinite; 
+}
+
+/* Animation soclmdia */
+@keyframes rotateOscillate {
+    0% {
+        transform: rotate(0deg); 
+    }
+    25% {
+        transform: rotate(45deg); 
+    }
+    50% {
+        transform: rotate(-45deg); 
+    }
+    75% {
+        transform: rotate(45deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+/* Social Media Links */
+.social-icons a {
+    margin: 0 15px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Hover Effects for Social Media Links */
+.social-icons a:hover {
+    color: #e4002b; 
+    transition: color 0.3s ease; /
+}
+
+footer .container {
+    max-width: 1200px;
+}
+
+/* Footer Section Styling */
+footer .row {
+    margin-bottom: 20px;
+}
+
+footer .col-md-3 ul {
+    padding-left: 0;
+}
+
+footer .col-md-3 li {
+    margin-bottom: 10px;
+}
+
+footer img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Footer Section Styling */
+footer .container {
+    max-width: 1200px;
+}
+
+/* Footer Section Styling */
+footer .row {
+    margin-bottom: 20px;
+}
+
+footer .col-md-3 ul {
+    padding-left: 0;
+}
+
+footer .col-md-3 li {
+    margin-bottom: 10px;
+}
+
+footer img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 992px) {
+    
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+
+    .offer-wrapper {
+        gap: 15px;
+    }
+
+    .offer-card {
+        width: 200px; 
+    }
+
+    /* Adjust footer  */
+    footer .col-md-3 {
+        flex: 0 0 50%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 150px; 
+    }
+
+    .category-card img {
+        border-radius: 5px;
+    }
+
+    footer .col-md-3 {
+        flex: 0 0 100%; 
+    }
+
+    /* Adjust font  small screens */
+    h3, .offer-card h6 {
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem; 
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; 
+    }
+
+    .social-icons i {
+        font-size: 25px; 
+    }
+}
+
+/* Very Small Scrns */
+@media (max-width: 480px) {
+    .navbar-nav .nav-item {
+        font-size: 0.8rem; 
+    }
+
+    .offer-card {
+        width: 100%; 
+    }
+}
